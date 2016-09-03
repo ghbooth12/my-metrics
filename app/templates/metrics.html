@@ -1,3 +1,7 @@
 <section class="metrics container clearfix">
   <h3>Metrics</h3>
+  <p>list of songs played</p>
+  <ul>
+    <li ng-repeat="title in metrics.titles">{{ title }} : {{ metrics.table[title] }}</li>
+  </ul>
 </section>
