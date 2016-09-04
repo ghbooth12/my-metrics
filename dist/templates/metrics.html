@@ -1,7 +1,6 @@
 <section class="metrics container clearfix">
-  <h3>Metrics</h3>
-  <p>list of songs played</p>
-  <ul>
-    <li ng-repeat="title in metrics.titles">{{ title }} : {{ metrics.table[title] }}</li>
-  </ul>
+  <h3>List of Songs Played</h3>
+  <div class="graph">
+    <nvd3 options="metrics.options" data="metrics.data"></nvd3>
+  </div>
 </section>
